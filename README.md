@@ -14,7 +14,7 @@ const ScriptExecution = require("@megahdrive/rccclient-node/ScriptExecution")
 const Job = require("@megahdrive/rccclient-node/Job")
 
 // Create our RCCService connection.
-const RCC = new RCCClient("127.0.0.1", 64989)
+const RCC = new RCCClient("127.0.0.1", 64989, "roblox.com")
 
 // Define our job.
 const myJob = new Job("myJob")
@@ -27,3 +27,4 @@ RCC.BatchJob(myJob, myScript, (result) => {
 // Bask in the glory of having control over RCCService - with node.js!
 ```
 
+This is a fork of the original [repo](https://github.com/megahdrive/rccclient-node) which adds some features.
