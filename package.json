@@ -1,5 +1,5 @@
 {
-  "name": "@megahdrive/rccclient-node",
+  "name": "@hadi12dsup/rccclient-node",
   "version": "1.0.0",
   "description": "A node.js library to interact with RCCService over SOAP",
   "main": "RCCClient.js",
@@ -11,12 +11,12 @@
     "rccservice",
     "soap"
   ],
-  "author": "megahdrive",
+  "author": "hadi12dsup",
   "license": "ISC",
   "dependencies": {
     "soap": "^1.0.0"
   },
   "publishConfig": {
-    "@megahdrive:registry": "https://npm.pkg.github.com"
+    "@hadi12dsup:registry": "https://npm.pkg.github.com"
   }
 }

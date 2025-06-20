@@ -2,10 +2,14 @@
 
 const soap = require("soap")
 
-const wsdl = require.resolve("@megahdrive/rccclient-node/RCCService.wsdl")
+var wsdl = require.resolve("@hadi12dsup/rccclient-node/RCCService.wsdl")
 
-function RCCClient(ip, port) {
+function RCCClient(ip, port, domain) {
     this.url = "http://" + ip + ":" + port
+    if (!domain.empty())
+    {
+        wsdl = wsdl.replace("roblox.com", domain)
+    }
 }
 
 RCCClient.prototype.callToService = function callToService(sender, options, callback) {
